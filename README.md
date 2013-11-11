@@ -1,2 +1,2 @@
-arc-rp
-======
+ARC Responsive Prototype
+=======
