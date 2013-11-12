@@ -149,7 +149,52 @@
         </section>
 
         <section>
-            {Add Slides about the tech side here}
+            <h2>Responsive Technology</h2>
+            <br />
+            <a href="http://bit.ly/180Dtbw" target="_blank">ARC Staging</a>
+            <br /><br />
+            <ul>
+                <li>ELF (responsive framework using middleman)</li>
+                <li>Stellar js (responsive parallax) / jQuery Waypoints</li>
+                <li>SASS/Compass mixins like for handling retina graphics</li>
+                <li>webkit-overflow-scrolling</li>
+                <li>Chun's technique for responsive layout with a fixed width column</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>The Technique</h2>
+            <br />
+            <p>We originally used on <a href="http://www.usanetwork.com/social/trending" target="_blank">USA Prototype's Social Page</a>.</p>
+            <br />
+            <p>On USA we knew the width of the ad column had to be fixed but the feed area to the left needed to be responsive.</p>
+            <br />
+            <p>The layout for the courses page on the ARC prototype needed to react the same way.</p>
+        </section>
+
+        <section>
+            <pre>
+                <code>
+                    .courses-wrap {
+                        overflow: hidden;
+                        padding-left: 345px;
+                    }
+
+                    .filters,
+                    .results {
+                        float: left;
+                    }
+
+                    .filters {
+                        width: 345px;
+                        margin-left: -345px;
+                    }
+
+                    .results {
+                        width: 100%;
+                    }
+                </code>
+            </pre>
         </section>
 
         <section>
